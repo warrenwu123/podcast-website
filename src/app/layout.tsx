@@ -1,16 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Manrope } from "next/font/google";
 import "./globals.css";
+import ConvexClerkProvider  from "../../Provider/ConvexClerkProvider";
+import { Toaster } from "@/components/ui/toaster"
+import AudioProvider from "../../Provider/AudioProvider";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const manrope = Manrope({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,11 +19,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <ConvexClerkProvider>    
+        <AudioProvider>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${manrope.className}`}
       >
+        <Toaster />
         {children}
       </body>
+      </AudioProvider>
+      </ConvexClerkProvider>
     </html>
   );
 }
