@@ -17,26 +17,25 @@ Integrated audio player for streaming podcast episodes directly on the site.
 **Data Fetching**: Utilized Convex for real-time data queries and mutations.  
 **Carousel**: Implemented using Embla Carousel for a smooth and responsive carousel experience.  
 
-Getting Started
+**Getting Started**
 
 To get a local copy of the project up and running, follow these steps:
 
-Clone the repository:
+**Clone the repository:**
 
 ```
 git clone https://github.com/warrenwu123/podcast-website.git
 ```
 
-Navigate to the project directory:
+**Navigate to the project directory:**
 ```
 cd podcast-website
 ```
-Install dependencies:
+**Install dependencies:**
 ```
 npm install
 ```
-
-Set up environment variables:
+**Set up environment variables:**
 Create a .env.local file in the root directory and add the necessary environment variables as shown below.
 
 ```
@@ -59,8 +58,7 @@ NEXT_PUBLIC_CLERK_SIGN_UP_URL='/sign-up'
 OPENAI_API_KEY=youropenaiapikey # this will be found at your own openai setting interface
 
 ```
-
-Run the development server:
+**Run the development server:**
 ```
 npm run dev
 ```
