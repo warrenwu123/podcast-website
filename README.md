@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This repository contains the source code for a podcast website built using modern web technologies. The website allows users to explore various podcasts, view podcaster profiles, and listen to episodes directly on the platform.
 
-## Getting Started
+## Features
+User Authentication: Implemented using Clerk for seamless sign-in and user management.
+Podcaster Profiles: Users can view detailed profiles of podcasters, including their podcasts and episodes.
+Podcast Carousel: Showcases top podcasters and their podcasts in an interactive carousel format.
+Audio Playback: Integrated audio player for streaming podcast episodes directly on the site.
+Technologies Used
+Frontend: Built with Next.js and React.
+Styling: Styled using Tailwind CSS for utility-first CSS.
+Authentication: Managed with Clerk for user authentication and profile management.
+Data Fetching: Utilized Convex for real-time data queries and mutations.
+Carousel: Implemented using Embla Carousel for a smooth and responsive carousel experience.
+Getting Started
 
-First, run the development server:
+To get a local copy of the project up and running, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Clone the repository:
+
+```
+git clone https://github.com/warrenwu123/podcast-website.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Navigate to the project directory:
+```
+cd podcast-website
+Install dependencies:
+```
+```
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Set up environment variables:
+Create a .env.local file in the root directory and add the necessary environment variables as shown below.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+# convex
+CONVEX_DEPLOYMENT=yourconvexdeployment # this will be generated when you first run convex dev
 
-## Learn More
+NEXT_PUBLIC_CONVEX_URL=yourconvexpublicurl # this will be generated when you first run convex dev
 
-To learn more about Next.js, take a look at the following resources:
+# clerk
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# the following codes will be found in your clerk account
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=yourpublickey
+CLERK_SECRET_KEY=yoursecretkey
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+CLERK_WEBHOOK_SECRET=yourwebhooksecret
 
-## Deploy on Vercel
+NEXT_PUBLIC_CLERK_SIGN_IN_URL='/sign-in'
+NEXT_PUBLIC_CLERK_SIGN_UP_URL='/sign-up'
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+OPENAI_API_KEY=youropenaiapikey # this will be found at your own openai setting interface
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+
+Run the development server:
+```
+npm run dev
+```
+Open your browser and navigate to http://localhost:3000 to view the website.
