@@ -1,11 +1,16 @@
 This repository contains the source code for a podcast website built using modern web technologies. The website allows users to explore various podcasts, view podcaster profiles, and listen to episodes directly on the platform.
 
 ## Features
-User Authentication: Implemented using Clerk for seamless sign-in and user management.
-Podcaster Profiles: Users can view detailed profiles of podcasters, including their podcasts and episodes.
-Podcast Carousel: Showcases top podcasters and their podcasts in an interactive carousel format.
-Audio Playback: Integrated audio player for streaming podcast episodes directly on the site.
-Technologies Used
+# User Authentication: 
+Implemented using Clerk for seamless sign-in and user management.
+# Podcaster Profiles: 
+Users can view detailed profiles of podcasters, including their podcasts and episodes.
+# Podcast Carousel: 
+Showcases top podcasters and their podcasts in an interactive carousel format.
+# Audio Playback: 
+Integrated audio player for streaming podcast episodes directly on the site.
+
+## Technologies Used
 Frontend: Built with Next.js and React.
 Styling: Styled using Tailwind CSS for utility-first CSS.
 Authentication: Managed with Clerk for user authentication and profile management.
@@ -24,8 +29,8 @@ git clone https://github.com/warrenwu123/podcast-website.git
 Navigate to the project directory:
 ```
 cd podcast-website
-Install dependencies:
 ```
+Install dependencies:
 ```
 npm install
 ```
