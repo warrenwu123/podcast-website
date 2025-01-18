@@ -11,11 +11,12 @@ Showcases top podcasters and their podcasts in an interactive carousel format.
 Integrated audio player for streaming podcast episodes directly on the site.
 
 ## Technologies Used
-Frontend: Built with Next.js and React.
-Styling: Styled using Tailwind CSS for utility-first CSS.
-Authentication: Managed with Clerk for user authentication and profile management.
-Data Fetching: Utilized Convex for real-time data queries and mutations.
-Carousel: Implemented using Embla Carousel for a smooth and responsive carousel experience.
+Frontend: Built with Next.js and React.  
+Styling: Styled using Tailwind CSS for utility-first CSS.  
+Authentication: Managed with Clerk for user authentication and profile management.  
+Data Fetching: Utilized Convex for real-time data queries and mutations.  
+Carousel: Implemented using Embla Carousel for a smooth and responsive carousel experience.  
+
 Getting Started
 
 To get a local copy of the project up and running, follow these steps:
